@@ -23,7 +23,7 @@ const connect = () => {
 app.get("/",(req, res)=>{
     res.send("Hello!");
 })
-
+app.use(express)
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 app.listen(8000,() => {
