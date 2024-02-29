@@ -26,6 +26,7 @@ app.get("/",(req, res)=>{
 app.use(express.json());
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
+
 app.listen(8000,() => {
     connect();
     console.log("Listening to port 8000");
