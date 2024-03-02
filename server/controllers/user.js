@@ -53,8 +53,6 @@ export const deleteUser = async (req, res, next) => {
         // currect user
         const currentUser = await User.findById(req.body.id);
 
-        await User.findByIdAndDelete(req.params.id);
-
         if(!user.followers.includes(req.body.id)){
             await user.updateOne({
                 $push: { followers:req.body.id},
