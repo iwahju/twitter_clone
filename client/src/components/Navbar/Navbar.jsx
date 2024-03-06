@@ -1,6 +1,8 @@
 import React from "react";
 import StarBorderPurple500Icon from "@mui/icons-material/StarBorderPurple500";
 import SearchIcon from '@mui/icons-material/Search';
+
+
 export const Navbar = () => {
   return (
     <div className="grid grid-col-1 md:grid-cols-4 my-5 justify-center">

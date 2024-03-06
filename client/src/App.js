@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar/Navbar";
 const Layout = () => {
   return (
     <div className="md:w-8/12 mx auto">
-      <h1>Navbar</h1>
+      <Navbar></Navbar>
       <Outlet></Outlet>
     </div>
   );
