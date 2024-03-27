@@ -17,6 +17,7 @@
     "react-redux": "^9.1.0",
     "react-router-dom": "^6.22.2",
     "react-scripts": "5.0.1",
+    "redux-persist": "^6.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -46,5 +47,8 @@
   "devDependencies": {
     "tailwindcss": "^3.4.1"
   },
-  "proxy": "http://localhost:8000/api"
+  "options": {
+    "allowedHosts": [ "localhost", ".localhost" ],
+    "proxy": "http://localhost:3000/api"
+  }
 }
